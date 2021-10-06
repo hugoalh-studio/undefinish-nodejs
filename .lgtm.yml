@@ -21,6 +21,7 @@ extraction:
   javascript:
     index:
       filetypes:
+        ".cjs": "js"
         ".jsm": "js"
         ".mjs": "js"
         ".tmpl": "html"
