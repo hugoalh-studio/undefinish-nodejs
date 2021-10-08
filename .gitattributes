@@ -59,6 +59,15 @@
 *.bh binary
 *.bibtex text diff=bibtex
 *.bl binary
+*.blake2b384 text
+*.blake2b512 text
+*.blake2s224 text
+*.blake2s256 text
+*.blake2sp text
+*.blake224 text
+*.blake256 text
+*.blake384 text
+*.blake512 text
 *.blend binary
 *.bmp binary
 *.bowerrc text
@@ -97,6 +106,8 @@
 *.cpio binary
 *.cpp text diff=cpp
 *.cpt binary
+*.crc32 text
+*.crc64 text
 *.cs text diff=csharp
 *.cshtml text diff=html
 *.cso binary
@@ -301,6 +312,10 @@
 *.mcmeta text
 *.mcscript text
 *.md text diff=markdown
+*.md2 text
+*.md4 text
+*.md5 text
+*.md6 text
 *.mdl binary
 *.mdlp binary
 *.mdown text diff=markdown
@@ -472,6 +487,11 @@
 *.sfx binary
 *.sgi binary
 *.sh text diff=bash eol=lf
+*.sha1 text
+*.sha224 text
+*.sha256 text
+*.sha384 text
+*.sha512 text
 *.shader text
 *.shar binary
 *.skel.bytes binary
