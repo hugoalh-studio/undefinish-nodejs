@@ -23,6 +23,6 @@ body:
     id: "additional"
     attributes:
       label: "Additional"
-      description: "If there has any information that related to this issue but not suitable to the other fields, please list those at here."
+      description: "If there have any information that related to this issue but not suitable to the other fields, please list those at here."
     validations:
       required: false
