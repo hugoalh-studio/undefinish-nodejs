@@ -4,12 +4,12 @@
 
 > | **Legend** | **Description** |
 > |:-:|:--|
-> | L | Long term supported. |
-> | ✔ | Supported. |
-> | 👎{🐛} | Partly supported due to confirmed contains bugs and/or issues. |
-> | 👎{🧓} | Partly supported due to deprecated by newer versions. |
-> | ❌{🐛} | Not supported due to confirmed contains bugs and/or issues. |
-> | ❌{🧓} | Not supported due to too old. |
+> | L | **LTS:** Long term supported. |
+> | ✔ | **Yes:** Supported. |
+> | 👎{🐛} | **Partly (Issue):** Partly supported due to confirmed contains bugs and/or issues. |
+> | 👎{🧓} | **Partly (Old):** Partly supported due to deprecated by newer versions. |
+> | ❌{🐛} | **No (Issue):** Not supported due to confirmed contains bugs and/or issues. |
+> | ❌{🧓} | **No (Old):** Not supported due to too old. |
 
 | **Tag / Version** | **Target** | **Support** |
 |:-:|:-:|:-:|
