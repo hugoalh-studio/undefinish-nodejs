@@ -1,12 +1,12 @@
 # $<Schema>$ https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
-name: "Publish - NodeJS"
+name: "Publish - NPM"
 on:
   release:
     types:
       - "published"
 jobs:
   publish-npm:
-    name: "Publish To NPM"
+    name: "Publish - NPM"
     runs-on: "ubuntu-latest"
     steps:
       - name: "Checkout Repository"
