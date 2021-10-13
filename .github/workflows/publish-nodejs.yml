@@ -1,5 +1,5 @@
 # $<Schema>$ https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
-name: "Publish To NPM"
+name: "Publish - NodeJS"
 on:
   release:
     types:
@@ -15,6 +15,7 @@ jobs:
         uses: "actions/setup-node@v2.4.1"
         with:
           node-version: 14
+          check-latest: true
           registry-url: "https://registry.npmjs.org/"
       - name: "Publish To Tag @latest"
         if: ${{github.event.release.prerelease == false}}
