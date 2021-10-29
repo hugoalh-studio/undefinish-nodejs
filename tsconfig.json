@@ -2,7 +2,6 @@
 	"compileOnSave": true,
 	"compilerOptions": {
 		"allowJs": true,
-		"checkJs": true,
 		"declaration": true,
 		"emitDeclarationOnly": true,
 		"outDir": "./typescript-declaration"
