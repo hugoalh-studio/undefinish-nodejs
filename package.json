@@ -18,7 +18,7 @@
 		"import": "./lib/main.mjs",
 		"require": "./lib/main.js"
 	},
-	"types": "./typescript-declaration/main.d.ts",
+	"types": "./@types/main.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/hugoalh-studio/undefinish-nodejs.git"
