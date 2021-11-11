@@ -6,3 +6,4 @@ export = undefinish;
  * @returns {any}
  */
 declare function undefinish(...inputs: any[]): any;
+//# sourceMappingURL=main.d.ts.map
