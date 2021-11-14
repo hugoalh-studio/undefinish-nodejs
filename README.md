@@ -78,7 +78,7 @@ import undefinish from "@hugoalh/undefinish";
 
 ```ts
 undefinish(
-  ...inputs: any
+  ...inputs: any[]
 ): any
 ```
 
