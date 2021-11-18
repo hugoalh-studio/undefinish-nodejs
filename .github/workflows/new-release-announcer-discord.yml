@@ -9,12 +9,33 @@ jobs:
     name: "New Release Announcer - Discord"
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "hugoalh/GitHubAction.SendToDiscord@v3.1.1"
+      - uses: "hugoalh/send-discord-webhook-ghaction@v4.0.0-beta.4"
         with:
-          configuration: ".github/workflows_configuration/new-release-announcer-discord.yml"
-          webhook_id: "${{secrets.DISCORDWEBHOOK_HUGOALHSTUDIO_STUDIOANNOUNCEMENT_NEWRELEASEANNOUNCER_ID}}"
-          webhook_token: "${{secrets.DISCORDWEBHOOK_HUGOALHSTUDIO_STUDIOANNOUNCEMENT_NEWRELEASEANNOUNCER_TOKEN}}"
-          variable_join: "."
-          # variable_list_external:
-          variable_prefix: "%"
-          variable_suffix: "%"
+          key: "${{secrets.DISCORDWEBHOOK_HUGOALHSTUDIO_STUDIOANNOUNCEMENT_PROJECTNEWRELEASEANNOUNCER}}"
+          payload: |
+            {
+              "embeds": [
+                {
+                  "title": "Undefinish (NodeJS Edition)",
+                  "description": "Version ${{github.event.release.name}} (${{github.event.release.tag_name}}) is released and available on:",
+                  "color": "2,110,0",
+                  "thumbnail": {
+                    "url": "https://i.imgur.com/iVfV21H.png"
+                  },
+                  "fields": [
+                    {
+                      "name": "GitHub (& Changelog)",
+                      "value": "${{github.event.release.html_url}}"
+                    },
+                    {
+                      "name": "NPM",
+                      "value": "https://www.npmjs.com/package/@hugoalh/undefinish"
+                    },
+                    {
+                      "name": "Repository",
+                      "value": "${{github.event.release.html_url}}"
+                    }
+                  ]
+                }
+              ]
+            }

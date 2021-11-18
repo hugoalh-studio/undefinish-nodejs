@@ -1,6 +1,6 @@
 {
 	"name": "@hugoalh/undefinish",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A module to provide a better and easier coalescing, similar to the function default parameter.",
 	"keywords": [
 		"coalescing",
@@ -24,8 +24,8 @@
 		"url": "git+https://github.com/hugoalh-studio/undefinish-nodejs.git"
 	},
 	"engines": {
-		"node": ">= 14.15.0",
-		"npm": ">= 6.14.8"
+		"node": ">= 6.9.0",
+		"npm": ">= 3.10.8"
 	},
 	"private": false
 }
