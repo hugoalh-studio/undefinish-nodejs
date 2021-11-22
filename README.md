@@ -1,4 +1,4 @@
-# Undefinish (NodeJS Edition)
+# Undefinish (NodeJS)
 
 [`Undefinish.NodeJS`](https://github.com/hugoalh-studio/undefinish-nodejs)
 [![GitHub Contributors](https://img.shields.io/github/contributors/hugoalh-studio/undefinish-nodejs?label=Contributors&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/undefinish-nodejs/graphs/contributors)
