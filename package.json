@@ -1,6 +1,6 @@
 {
 	"name": "@hugoalh/undefinish",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "A module to provide a better and easier coalescing, similar to the function default parameter.",
 	"keywords": [
 		"coalescing",
