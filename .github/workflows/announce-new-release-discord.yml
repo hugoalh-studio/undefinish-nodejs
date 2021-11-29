@@ -33,7 +33,7 @@ jobs:
                     },
                     {
                       "name": "Repository",
-                      "value": "${{github.event.release.html_url}}"
+                      "value": "${{github.event.repository.html_url}}"
                     }
                   ]
                 }
