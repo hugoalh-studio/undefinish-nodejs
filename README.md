@@ -56,7 +56,7 @@ undefinish(a, b, c, d, e, 1);
 
 #### Install
 
-NodeJS (>= v14.15.0) + NPM (>= v6.14.8):
+NodeJS (>= v6.9.0) + NPM (>= v3.10.8):
 
 ```sh
 npm install @hugoalh/undefinish
