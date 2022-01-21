@@ -85,23 +85,14 @@ undefinish(
 ### Example
 
 ```js
-let a;
-undefinish(a, 8);
-//=> 8
-
-let b = {
-  age: 8
-};
-undefinish(b.username, b.name, b.displayName, "owl");
-//=> "owl"
-
-let c = {
+let input = {
   displayName: null,
   age: 8
 };
-console.log(c.username ?? c.name ?? c.displayName ?? "owl");
-// "owl"
 
-undefinish(c.username, c.name, c.displayName, "owl");
+input.username ?? input.name ?? input.displayName ?? "owl";
+//=> "owl"
+
+undefinish(input.username, input.name, input.displayName, "owl");
 //=> null
 ```
