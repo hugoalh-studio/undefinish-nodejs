@@ -14,7 +14,7 @@ jobs:
       - name: "Get Package Meta"
         id: "get-package-meta"
         run: |
-          [pscustomobject]$PackageMeta = (Get-Content -Path .\package.json -Encoding utf8NoBOM -Raw | ConvertFrom-Json)
+          [pscustomobject]$PackageMeta = (Get-Content -Path '.\package.json' -Raw -Encoding utf8NoBOM | ConvertFrom-Json)
           Write-Host -Object "::set-output name=name::$($PackageMeta.name)"
           Write-Host -Object "::set-output name=version::$($PackageMeta.version)"
         shell: "pwsh"
