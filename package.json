@@ -28,5 +28,5 @@
 		"npm": ">= 3.10.8"
 	},
 	"private": false,
-	"runkitExampleFilename": "example.js"
+	"runkitExampleFilename": "./example.js"
 }
