@@ -1,4 +1,3 @@
-# $<Schema>$ https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 name: "Analyze Code - Open Source Static Analysis Runner"
 on:
   push:
@@ -19,18 +18,18 @@ jobs:
     runs-on: "windows-latest"
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v3.0.0"
+        uses: "actions/checkout@v3.0.2"
         with:
           fetch-depth: 0
-      # Ensure a compatible version of .NET is installed. The Microsoft Security Code Analysis CLI (https://aka.ms/mscadocs) is built with .NET v3.1.201. A version greater than or equal to v3.1.201 of .NET must be installed on the agent in order to run this action. Remote agents already have a compatible version of .NET installed and this step may be skipped. For local agents, ensure .NET version 3.1.201 or later is installed by including this action.
+      # Ensure a compatible version of .NET is installed.
       - name: "Install .NET"
         uses: "actions/setup-dotnet@v2.0.0"
         with:
-          dotnet-version: "3.1.x"
+          dotnet-version: "6.x.x"
       - name: "Analyze Repository"
         id: "ossar"
         uses: "github/ossar-action@v1.1.0"
       - name: "Upload Result"
-        uses: "github/codeql-action/upload-sarif@v1"
+        uses: "github/codeql-action/upload-sarif@v2"
         with:
           sarif_file: "${{steps.ossar.outputs.sarifFile}}"
