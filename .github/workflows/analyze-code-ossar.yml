@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
       # Ensure a compatible version of .NET is installed.
       - name: "Install .NET"
-        uses: "actions/setup-dotnet@v2.0.0"
+        uses: "actions/setup-dotnet@v2.1.0"
         with:
           dotnet-version: "6.x.x"
       - name: "Analyze Repository"
