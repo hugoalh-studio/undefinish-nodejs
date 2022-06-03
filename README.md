@@ -77,6 +77,8 @@ import undefinish from "@hugoalh/undefinish";
 
 ### API
 
+#### Function
+
 ```ts
 undefinish(
   ...inputs: any[]
